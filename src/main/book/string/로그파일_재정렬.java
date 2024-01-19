@@ -1,25 +1,23 @@
 package main.book.string;
 
-
-/*
-로그를 재정렬하라. 기준은 다음과 같다.
-* 1. 로그의 가장 앞 부분은 식별자로서, 순서에 영향을 끼치지 않는다.
-* 2. 문자로 구성된 로그가 숫자 로그보다 앞에 오며, 문자 로그는 사전순으로 한다.
-* 3. 문자가 동일할 경우에는 식별자순으로 한다.
-* 4. 숫자로그는 입력 순서대로 한다.
-
-in  : ["id1 8 1 5 1", "id2 art can", "id3 3 6", "id4 own kit dig", "id5 art zero"]
-out : ["id2 art can", "id5 art zero", "id4 own kit dig", "id1 8 1 5 1", "id3 3 6"]
-* */
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class 로그파일_재정렬 {
+
     public static void main(String[] args) {
 
     }
+    /*
+    로그를 재정렬하라. 기준은 다음과 같다.
+    * 1. 로그의 가장 앞 부분은 식별자로서, 순서에 영향을 끼치지 않는다.
+    * 2. 문자로 구성된 로그가 숫자 로그보다 앞에 오며, 문자 로그는 사전순으로 한다.
+    * 3. 문자가 동일할 경우에는 식별자순으로 한다.
+    * 4. 숫자로그는 입력 순서대로 한다.
 
+    in  : ["id1 8 1 5 1", "id2 art can", "id3 3 6", "id4 own kit dig", "id5 art zero"]
+    out : ["id2 art can", "id5 art zero", "id4 own kit dig", "id1 8 1 5 1", "id3 3 6"]
+    * */
     public String[] reorderLogFiles(String[] logs) {
         List<String> letterList = new ArrayList<>();
         List<String> digitList = new ArrayList<>();
