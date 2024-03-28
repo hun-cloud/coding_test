@@ -1,4 +1,4 @@
-package main.book.array;
+package main.book.arraystudy;
 
 public class 빗물_트래핑 {
     public static void main(String[] args) {

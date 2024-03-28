@@ -1,4 +1,4 @@
-package main.book.array;
+package main.book.arraystudy;
 
 import java.util.HashMap;
 import java.util.Map;
