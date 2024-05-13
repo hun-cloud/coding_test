@@ -1,9 +1,6 @@
 package main.book.stackqueue;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class 유효한_괄호 {
     /**
@@ -13,6 +10,7 @@ public class 유효한_괄호 {
      * */
     public boolean isValid(String s) {
         // 유효성 검증을 위한 스택 선언
+
         Deque<Character> stack = new ArrayDeque<>();
         // 유효성 검증을 위한 매핑 테이블
         Map<Character, Character> table = new HashMap<>(){{
