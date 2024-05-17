@@ -47,7 +47,6 @@ public class CleanRobot {
 
             answer[0] += y;
             answer[1] += x;
-
         }
         System.out.println(Arrays.toString(answer));
         return answer;
