@@ -31,4 +31,22 @@ public class 사다리타기 {
 
         return result;
     }
+
+    public static char[] solutionAnswer(int n, int[][] ladder) {
+        char[] answer = new char[n];
+
+        for (int i = 0; i < n; i++) {
+            answer[i] = (char) (i + 65);
+        }
+
+        for (int[] line : ladder) {
+            for (int x : line) {
+                char tmp = answer[x];
+                answer[x] = answer[x - 1];
+                answer[x-1] = tmp;
+            }
+        }
+
+        return answer;
+    }
 }
