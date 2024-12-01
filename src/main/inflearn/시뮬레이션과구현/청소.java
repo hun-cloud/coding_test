@@ -4,13 +4,16 @@ import java.util.Arrays;
 
 public class 청소 {
     public static void main(String[] args) {
-        int[][] board = {{0, 0, 0, 1, 0, 1}, {0, 0, 0, 0, 0, 0}, {0, 0,
-                0, 0, 0, 1}, {1, 1, 0, 0, 1, 0}, {0, 0, 0, 0, 0,
-                0},{0, 0, 0, 0, 0, 0}};
+        int[][] board = {
+                {0, 0, 0, 1, 0, 1},
+                {0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 1},
+                {1, 1, 0, 0, 1, 0},
+                {0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0}};
         int k = 20;
         int[] solution = solution(board, k);
         System.out.println(Arrays.toString(solution));
-
     }
 
     public static int[] solution(int[][] board, int k) {
