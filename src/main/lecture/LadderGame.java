@@ -1,6 +1,5 @@
 package main.lecture;
 
-import main.test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
