@@ -23,9 +23,9 @@ public class 청소 {
 
             if (isCanMove) {
                 move(result, direction, directionIndex);
-            } else {
-                directionIndex = (directionIndex + 1) % 4;
+                continue;
             }
+            directionIndex = (directionIndex + 1) % 4;
         }
 
         return result;
