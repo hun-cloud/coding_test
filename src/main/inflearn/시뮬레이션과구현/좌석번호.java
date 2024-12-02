@@ -19,7 +19,6 @@ public class 좌석번호 {
         int[] result = {1, 1};
 
         for (int i = 0; i < k - 1; i++) {
-            System.out.println(Arrays.toString(result));
             switch (direction) {
                 case 0 -> {
                     if (result[1] + 1 == maxCountArr[0]) {
