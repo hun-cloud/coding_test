@@ -40,9 +40,7 @@ public class 과일가져가기 {
                         break;
                     }
                 }
-
             }
-
         }
 
         return Arrays.stream(fruit)
