@@ -42,6 +42,8 @@ public class 과일가져가기 {
                 }
             }
         }
+        Arrays.stream(fruit).forEach(i -> System.out.println(Arrays.toString(i)));
+
 
         return Arrays.stream(fruit)
                 .mapToInt(i -> getMin(i))
