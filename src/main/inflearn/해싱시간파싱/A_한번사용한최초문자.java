@@ -3,7 +3,7 @@ package main.inflearn.해싱시간파싱;
 import java.util.HashMap;
 import java.util.Map;
 
-public class 한번사용한최초문자 {
+public class A_한번사용한최초문자 {
     public static void main(String[] args) {
         int result = solution("abcdeabcdfg");
         System.out.println("result = " + result);
