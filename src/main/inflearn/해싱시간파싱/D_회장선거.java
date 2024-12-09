@@ -3,7 +3,7 @@ package main.inflearn.해싱시간파싱;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class 회장선거 {
+public class D_회장선거 {
     public static void main(String[] args) {
         String[] votes = {"bob tom", "bob park", "park bob", "luis park",
                 "daniel luis", "luis bob", "park luis", "tom bob", "tom luis", "john park", "park john"};
