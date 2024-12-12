@@ -35,7 +35,6 @@ public class C_서로다른빈도수만들기 {
             }
         }
 
-        System.out.println(Arrays.toString(countArray));
         return result;
     }
 }
