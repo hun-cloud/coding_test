@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class F_경고메일 {
+public class G_경고메일 {
 
     private static final SimpleDateFormat format = new SimpleDateFormat("HH:mm");
 

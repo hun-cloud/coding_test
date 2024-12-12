@@ -1,6 +1,6 @@
 package main.inflearn.해싱시간파싱;
 
-public class C_음수가있는부분수열 {
+public class D_음수가있는부분수열 {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3,-3, 1, 2};
         int m = 3;
