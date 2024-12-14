@@ -14,8 +14,11 @@ public class E_회장선거 {
 
     public static String solution(String[] votes, int k) {
         List<Candidate> candidateList = initVote(votes);
+
         List<Candidate> realCandidateList = filterRealCandidate(candidateList, k);
+
         List<String> receiverList = getReceiveGiftReceiver(realCandidateList);
+
         return receiverList.getFirst();
     }
 
