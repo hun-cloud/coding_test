@@ -23,8 +23,11 @@ public class F_문서도난 {
 
     public static String[] solution(String[] solution, String times) throws Exception{
         Date[] timesArr = initTime(times);
+
         List<Agent> agents = initAgent(solution);
+
         List<Agent> accessedAgentInTimeList = filterAgent(agents, timesArr);
+
         return sortAccessedTime(accessedAgentInTimeList);
     }
 
