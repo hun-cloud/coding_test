@@ -15,6 +15,7 @@ public class C_현관문출입순서 {
         int[] answer = new int[n];
 
         for (int t = 0, i = 0, cnt = 0; ; t++) {
+
             if (enter.isEmpty() && exit.isEmpty() && i < n) {
                 if (t < arrival[i]) {
                     t = arrival[i];
@@ -22,10 +23,35 @@ public class C_현관문출입순서 {
                 }
             }
             while (i < n && arrival[i] <= t) {
-
+                if (state[i] == 0) {
+                    if (state[i] == 0) enter.offer(i);
+                } else {
+                    exit.offer(i);
+                }
+                i++;
+            }
+            if (prev == 1) {
+                if (!exit.isEmpty()) {
+                    answer[exit.poll()] = t;
+                    prev = 1;
+                } else {
+                    answer[enter.poll()] = t;
+                    prev = 0;
+                }
+            } else if (prev == 0) {
+                if (!enter.isEmpty()) {
+                    answer[enter.poll()] = t;
+                    prev = 0;
+                } else {
+                    answer[exit.poll()] = t;
+                    prev = 1;
+                }
+            }
+            cnt++;
+            if (cnt == n) {
+                break;
             }
         }
-
-
+        return answer;
     }
 }
