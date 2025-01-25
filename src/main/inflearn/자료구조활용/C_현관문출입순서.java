@@ -11,11 +11,15 @@ public class C_현관문출입순서 {
         Queue<Integer> enter = new LinkedList<>();
         Queue<Integer> exit = new LinkedList<>();
         int n = arrival.length;
-        int prev = 1;
+        int prev = 1; // 0 : 들어오는 사원, 1 : 나가는 사원
         int[] answer = new int[n];
 
         for (int t = 0, i = 0, cnt = 0; ; t++) {
 
+            // cnt : 처리된 사원 수
+            // i : 인덱스 역할
+            // t : 시간
+            
             if (enter.isEmpty() && exit.isEmpty() && i < n) {
                 if (t < arrival[i]) {
                     t = arrival[i];
