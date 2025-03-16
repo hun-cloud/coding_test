@@ -1,10 +1,13 @@
 package main.inflearn.greedy;
 
+import java.util.Arrays;
+
 public class E_전투_게임 {
     public static void main(String[] args) {
         String[] students = {"a 20", "b 12", "a 10", "c 11", "e 12"};
 
         int[] solution = solution(students);
+        System.out.println("Arrays.toString(solution) = " + Arrays.toString(solution));
     }
 
     public static int[] solution(String[] students) {

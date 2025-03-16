@@ -4,9 +4,10 @@ import java.util.Arrays;
 
 public class D_꽃이_피는_최단시간 {
     public static void main(String[] args) {
-        int[] plantTime = {2, 1, 4, 3};
-        int[] growTime = {2, 5, 3, 1};
-        solution(plantTime, growTime);
+        int[] plantTime = {1, 2, 3, 4, 5, 6, 7};
+        int[] growTime = {7, 5, 4, 3, 2, 1, 6};
+        int result = solution(plantTime, growTime);
+        System.out.println("result = " + result);
     }
 
     public static int solution(int[] plantTime, int[] growTime) {
